@@ -1,0 +1,32 @@
+.mauDo {
+  font-size: 100%;
+  color: red;
+}
+
+.mauXanh {
+  font-size: 100%;
+  color: green;
+}
+
+[class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+li {
+  width: 150px;
+}
+
+#form1 {
+  height: AUTO;
+}
+
+h4 {
+  text-align: center;
+  background-color: rgb(85, 151, 192);
+  color: rgb(4, 4, 138);
+}
+
+h5 {
+  color: rgb(4, 4, 138);
+}

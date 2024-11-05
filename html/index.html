@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container border">
+        <div class="row">
+            <h4 class="mx-auto p-2">DANH SÁCH LƯƠNG NHÂN VIÊN</h4>
+        </div>
+        <div class="row">
+            <div class="navbar">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Thông tin</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="btnDK" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Cập nhật lương</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-bordered table-hover" id="tbDanhSach">
+                <tr>
+                    <th>STT</th>
+                    <th>Mã nhân sự</th>
+                    <th>Họ tên</th>
+                    <th>Ngày hợp đồng</th>
+                    <th>Chức vụ</th>
+                    <th>Bậc lương</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>912345678</td>
+                    <td>Hoàng Minh Vương</td>
+                    <td>12/5/2000</td>
+                    <td>Nhân viên</td>
+                    <td>1.86</td>
+                </tr>
+            </table>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabel">THÔNG TIN NHÂN VIÊN</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form" id="form1">
+                            <div class="mb-3">
+                                <label for="txtMa" class="form-label">Mã Nhân Viên:</label>
+                                <input type="text" class="form-control" id="txtMa" placeholder="Mã Nhân Sự">
+                                <span class="mauDo" id="tbMa">*</span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtHT" class="form-label">Tên Nhân Viên:</label>
+                                <input type="text" class="form-control" id="txtHT" placeholder="Họ tên">
+                                <span class="mauDo" id="tbTen">*</span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtDate" class="form-label">Ngày vào công ty:</label>
+                                <input type="date" class="form-control" id="txtNgay" name="txtNgay">
+                                <span class="mauDo" id="tbNgay">*</span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtDt" class="form-label">Chức vụ:</label> <br>
+                                <input type="radio" id="chucvu" name="chucvu" class="chucvu" value="Cán bộ quản lý"> Cán
+                                bộ quản lý
+                                <input type="radio" id="chucvu" name="chucvu" class="chucvu" value="Nhân viên"> Nhân
+                                viên <br>
+                                <span class="mauDo" id="tbchuc">*</span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtDC" class="form-label">Bậc lương:</label> <br>
+                                <select name="luong" id="luong" class="form-control">
+                                    <option value="1.86">Bậc 1</option>
+                                    <option value="1.98">Bậc 2</option>
+                                    <option value="2.01">Bậc 3</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="heso" class="form-label">Hệ số:</label> <br>
+                                <input type="text" name="heso" id="heso" class="form-control" value="1.86">
+                            </div>
+                            <button type="button" class="btn btn-success w-25" id="btnSave">Thêm</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class=" text-center p-2">
+                <h5>22718951 : Trần Thị Mỹ Linh</h5>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery-3.7.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+
+</html>
